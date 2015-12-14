@@ -1,0 +1,54 @@
+<div class="col-md-12">
+  <h2>DC Fair Elections Coalition</h2>
+  <h5>The DC Fair Elections Coalition represents groups from the environmental, labor, economic justice, social justice, faith, and good government movements. Our mission is to pass meaningful campaign finance reform in D.C. to empower everyday residents and make sure every voice is heard in our democracy.</h5>
+  <div class="coalition-join">
+  <h4>Run an Organization?</h4>
+  <button class="btn btn-info" id="coalition-contact-btn">Join the Coalition</button>
+</div>
+  <h3>Coalition Members</h3>
+  <ul class="coalition-orgs">
+    <% @organizations.in_groups_of(14, false) do |org_col| %>
+    <div class="col-md-4 col-xs-12">
+      <% org_col.each do |org| %>
+      <li>
+        <%= org.name %>
+      </li>
+      <% end %>
+    </div>
+    <% end %>
+  </ul>
+</div>
+
+<!-- <div class="col-md-3 col-xs-6">
+  <h3>Other Local Organizations</h3>
+  <ul class="coalition-orgs coalition-orgs-community">
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+  </ul>
+</div>
+<div class="col-md-3 col-xs-6">
+  <h3>National Organizations</h3>
+  <ul class="coalition-orgs coalition-orgs-national">
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+  </ul>
+</div>
+<div class="col-md-3 col-xs-6">
+  <h3>Individuals</h3>
+  <ul class="coalition-orgs coalition-orgs-people">
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+  </ul>
+</div> -->
