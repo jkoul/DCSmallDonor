@@ -19,6 +19,7 @@ ActiveRecord::Schema.define(version: 20151213222014) do
   create_table "organizations", force: :cascade do |t|
     t.string   "name"
     t.string   "orgtype"
+    t.string   "orgUrl"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end

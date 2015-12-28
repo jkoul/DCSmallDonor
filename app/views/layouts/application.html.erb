@@ -11,7 +11,7 @@
     <nav class="navbar navbar-inverse">
       <div class="container">
         <div class="navbar-header">
-          <a class="navbar-brand" href="#">DC Small Donor Democracy</a>
+          <a class="navbar-brand" href="#">DC Fair Elections Coalition</a>
         </div>
         <div>
           <ul class="nav navbar-nav">
@@ -21,6 +21,12 @@
             <li><%= link_to "Get Involved", "/#action" %></li>
             <li><%= link_to "News", "/#news" %></li>
             <li><%= link_to "Contact", "/#contact" %></li>
+            <li class="nav-signup">
+                <script>window.yepnope || document.write('<script src="https://actionnetwork.org/includes/js/yepnope154-min.js"><\/script>');</script>
+                <script src='https://actionnetwork.org/widgets/v2/form/e9ab2a019489a0211ea7a6a8e3e181143119ecfe?format=js&source=widget'></script>
+                <div id='can-form-area-e9ab2a019489a0211ea7a6a8e3e181143119ecfe'><!-- this div is the target for our HTML insertion --></div>
+              </div>
+            </li>
           </ul>
         </div>
       </div>
@@ -43,7 +49,26 @@
 </div>
 
 <footer class="row footer">
-  <h3>Insert Footer Content Here</h3>
+  <div class="col-md-12">
+    <h3>Contacts</h3>
+    <ul class="contacts">
+      <li><strong>Media:</strong> <span>Delvone Michael, DC Working Families, </span><span>dmichael@workingfamilies.org</span></li>
+      <li><strong>Coalition Membership:</strong> <span>Aquene Freechild, Public Citizen, </span><span>afreechild@citizen.org</span></li>
+      <li><strong>Website/Digital Engagement:</strong> <span>Jeremy Koulish, DC for Democracy, </span><span>jeremy.koulish@gmail.com</span></li>
+      <li><strong>General:</strong> <span>Zach Weinstein, USPIRG, </span><span>zweinstein@pirg.org, </span><span>202-546-9707 x384</span></li>
+  </div>
+  <div class="col-md-12">
+<nav class="navbar">
+  <div class="container">
+    <ul class="nav navbar-nav">
+      <li><%= link_to "Home", root_url %></li>
+      <li><%= link_to "About the Coalition", "/#coalition" %></li>
+      <li><%= link_to "Why Fair Elections?", "/#about" %></li>
+      <li><%= link_to "Get Involved", "/#action" %></li>
+      <li><%= link_to "News", "/#news" %></li>
+      <li><%= link_to "Contact", "/#contact" %></li>
+    </div>
+  </div>
 </footer>
 
 </body>

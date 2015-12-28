@@ -2,6 +2,7 @@
 @import "bootstrap";
 
 
+
 // #homeCarousel {
 //   width: 764px;
 //   height: 400px;
@@ -11,9 +12,28 @@
 .navbar {
   margin-bottom: 0;
   text-align: center;
-  .nav {
-    // float: none;
+  .navbar-header, .navbar-nav {
+    width: 100%;
+    float: none;
     margin: 0 auto;
+    .navbar-brand, li {
+      float: none;
+      display: inline-block;
+
+      a {
+        padding-top: 5px;
+      }
+    }
+    .navbar-brand {
+      color: #ccc;
+      font-size: 2em;
+      font-family: serif;
+      letter-spacing: 1px;
+      // text-transform: uppercase;
+      font-weight: 700;
+      line-height: normal;
+      padding-bottom: 0;
+    }
   }
 }
 
@@ -129,6 +149,9 @@
 #homePetition {
   #can_embed_form_inner {
     margin-top: 30px;
+    h3, h4 {
+      display: none;
+    }
   }
   h2,h3,h4, #action_info .action_info_user, #d_sharing li {
     text-align: center !important;
@@ -143,6 +166,75 @@
   }
 }
 
+#action {
+  display: none;
+}
+
+.nav-signup {
+  width: 100%;
+  // text-align: center;
+  #can_embed_form_inner {
+    // display: inline-block;
+    h2, h4 {
+      display: none;
+    }
+    #new_answer {
+      display: inline;
+      visibility: hidden;
+
+      #action_welcome_message {
+        color: #ccc;
+      }
+
+      #form_col1, #form_col2 {
+        display: inline-block;
+        float: none;
+        width: auto;
+        vertical-align: middle;
+      }
+      #form-email, #form-zip_code {
+        font-size: 16px;
+        margin-right: 1em;
+        float: left;
+      }
+      #form-email {
+        width: 200px;
+      }
+
+      #form-zip_code {
+        width: 100px;
+      }
+
+      .submit {
+        width: auto;
+      }
+
+      #form-first_name, #form-last_name, .country_wrap, .control-group, .control-label, #d_sharing {
+        display: none;
+      }
+    }
+
+    #action_info, #logo_wrap {
+      display: none;
+    }
+  }
+
+  #form_col2 {
+    visibility: hidden;
+  }
+}
+
+#petition {
+  .well {
+    padding: 2em;
+
+    h4 {
+      text-align: left !important;
+      margin: 30px 0;
+    }
+  }
+}
+
 
 .sidebar {
   background: #d9d9d9;
@@ -150,14 +242,31 @@
 }
 
 .footer {
-  background: black;
-  color: white;
+  background: #222;
+  color: #ccc;
   text-align: center;
-  height: 150px;
+
+  .contacts {
+    // margin: 0 20%;
+    padding-left: 0;
+    text-align: center;
+    li {
+      list-style: none;
+      // text-align: left;
+    }
+  }
 }
 
-@media screen and (max-width: 1000px) {
-  .sidebar {
-    display: none;
+@media screen and (max-width: 767px) {
+  .contacts {
+    li {
+      padding-bottom: 10px;
+      span {
+        display: block;
+      }
+    }
+  }
+  .navbar .nav li {
+    display: block;
   }
 }

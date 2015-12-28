@@ -10,7 +10,6 @@
         <li data-target="#homeCarousel" data-slide-to="0" class="active"></li>
         <li data-target="#homeCarousel" data-slide-to="1"></li>
         <li data-target="#homeCarousel" data-slide-to="2"></li>
-        <li data-target="#homeCarousel" data-slide-to="3"></li>
       </ol>
 
       <div class="carousel-inner" role="listbox">
@@ -60,9 +59,9 @@
         <h3><a href="#about">Fair Elections Legislation</a></h3>
         <h4>Highlights of Small Donor Empowerment Legislation in DC:</h4>
         <ul>
-          <li>Introduced on December 1, 2015, as B21-0509, the "Citizens Fair Election Program Amendment Act of 2015".</li>
+          <!-- <li>Introduced on December 1, 2015, as B21-0509, the "Citizens Fair Election Program Amendment Act of 2015".</li>
           <li>Introduced by Councilmember David Grosso</li>
-          <li>Co-sponsored by Chairman Phil Mendelson and Councilmembers Charles Allen, Mary Cheh, Brianne Nadeau, and Elissa Silverman.</li>
+          <li>Co-sponsored by Chairman Phil Mendelson and Councilmembers Charles Allen, Mary Cheh, Brianne Nadeau, and Elissa Silverman.</li> -->
           <li>Would cover the offices of Mayor, City Council, and Attorney General.</li>
           <li>Participating candidates qualify for the program by collecting a certain number of contributions of $100 or less from DC residents.</li>
           <li>The program provides a base grant to qualifying candidates and a 5:1 public match on all subsequent eligible contributions.</li>
@@ -72,37 +71,46 @@
         <!-- <button class="btn btn-primary btn-lg"><%= link_to "Learn More", "#about" %></button> -->
         <button class="btn btn-primary btn-lg"><%= link_to "Become a Citizen Co-Sponsor", "#petition" %></button>
       </div>
+      <div class="well" id="whySummary">
+        <h3>Why Fair Elections?</h3>
+        <h4>What this legislation would do for DC:</h4>
+        <ul>
+          <li>Limit corruption by providing an alternate, cleaner means of funding elections.</li>
+          <li>Make the D.C. Council more accountable to constituents.</li>
+          <li>Encourage citizen participation and drive candidates to gather support from everyday District residents.</li>
+          <li>Give renters and homeowners a stronger voice in public policy.</li>
+        </ul>
+        <button class="btn btn-primary btn-lg"><%= link_to "Learn More", "#about" %></button>
+      </div>
     </div>
 
     <div class="col-md-6 col-xs-12">
-      <div class="row">
-        <div class="well" id="whySummary">
-          <h3>Why Fair Elections?</h3>
-          <h4>What this legislation would do for DC:</h4>
-          <ul>
-            <li>Limit corruption by providing an alternate, cleaner means of funding elections.</li>
-            <li>Make the D.C. Council more accountable to constituents.</li>
-            <li>Encourage citizen participation and drive candidates to gather support from everyday District residents.</li>
-            <li>Give renters and homeowners a stronger voice in public policy.</li>
-          </ul>
-          <button class="btn btn-primary btn-lg"><%= link_to "Learn More", "#about" %></button>
-        </div>
-      </div>
-      <div class="row">
-        <div class="well" id="newsSummary">
-          <h3><a href="#news">Recent News</a></h3>
-          <ul>
-            <li><a href="https://wamu.org/news/15/12/01/proposal_seeks_to_weaken_special_interests_influence_over_dc_elections" target="_blank">Proposal Seeks To Weaken Special Interests' Influence Over D.C. Elections</a><br/ >WAMU, December 1</li>
-            <li><a href="https://www.washingtonpost.com/local/dc-council-to-consider-public-financing-of-campaigns/2015/12/01/e67af82e-985c-11e5-aca6-1ae3be6f06d2_story.html" target="_blank">DC Council to consider public financing of campaigns</a><br/ >Associated Press, December 1</li>
-            <li>INSERT 1-2 MORE HERE</li>
-          </ul>
-          <button class="btn btn-primary btn-lg"><%= link_to "See All News", "#news" %></button>
-        </div>
+      <div class="well" id="newsSummary">
+        <h3><a href="#news">Recent News</a></h3>
+        <h4>Press Coverage</h4>
+        <ul>
+          <li><a href="https://wamu.org/news/15/12/01/proposal_seeks_to_weaken_special_interests_influence_over_dc_elections" target="_blank">Proposal Seeks To Weaken Special Interests' Influence Over D.C. Elections</a><br/ >WAMU, December 1</li>
+          <li><a href="https://www.washingtonpost.com/opinions/the-sudden-end-of-freshpac/2015/11/13/f8ce5b60-88c6-11e5-bd91-d385b244482f_story.html" target="_blank">The sudden end of FreshPAC</a><br/ >Washington Post LTE, November 13</li>
+          <li><a href="https://www.washingtonpost.com/local/dc-council-to-consider-public-financing-of-campaigns/2015/12/01/e67af82e-985c-11e5-aca6-1ae3be6f06d2_story.html" target="_blank">DC Council to consider public financing of campaigns</a><br/ >Associated Press, December 1</li>
+          <li><a href="http://thekojonnamdishow.org/shows/2015-12-01/u-s-rep-john-sarbanes-on-how-money-influences-politics-locally-and-nationally" target="_blank">U.S. Rep. John Sarbanes On How Money Influences Politics, Locally And Nationally</a><br/ >The Kojo Nnamdi Show, WAMU 88.5, December 1</li>
+        </ul>
+        <h4>Coalition Partner Releases</h4>
+        <ul>
+          <li><a href="http://www.uspirg.org/news/usp/dc-council-introduces-fair-elections-legislation" target="_blank">D.C. Council Introduces Fair Elections Legislation</a><br/ >US PIRG, December 1</li>
+          <li><a href="http://www.cwa-union.org/news/entry/cwa_stands_with_democracy_initiative_partners_for_fair_elections_in_washing#.VncNzRorKu4" target="_blank">CWA Stands With Democracy Initiative Partners For Fair Elections In Washington, DC</a><br/ >Communication Workers of America, December 3</li>
+        </ul>
+        <button class="btn btn-primary btn-lg"><%= link_to "See All News", "#news" %></button>
       </div>
     </div>
   </div>
 
   <div class="row section" id="homePetition">
+    <div class="col-md-12">
+        <button type="button" class="btn btn-info btn-lg" id="showPetition">Show Petition Text</button>
+      <div class="row" id="action">
+        <%= render 'petition' %>
+      </div>
+    </div>
     <div class="col-md-12 col-xs-12">
       <link href='https://actionnetwork.org/css/style-embed-whitelabel.css' rel='stylesheet' type='text/css' />
       <script>window.yepnope || document.write('<script src="https://actionnetwork.org/includes/js/yepnope154-min.js"><\/script>');</script>
