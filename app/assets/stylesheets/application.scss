@@ -1,6 +1,8 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
 
+@import "*";
+
 
 
 // #homeCarousel {
@@ -172,7 +174,13 @@
 
 .nav-signup {
   width: 100%;
-  // text-align: center;
+  margin-bottom: 15px;
+
+  #can-form-area-e9ab2a019489a0211ea7a6a8e3e181143119ecfe, .fb-page {
+    display: inline-block;
+    vertical-align: middle;
+  }
+
   #can_embed_form_inner {
     // display: inline-block;
     h2, h4 {
@@ -192,9 +200,15 @@
         width: auto;
         vertical-align: middle;
       }
+
+      #form_col2 {
+        visibility: hidden;
+      }
+
       #form-email, #form-zip_code {
         font-size: 16px;
         margin-right: 1em;
+        margin-bottom: 0;
         float: left;
       }
       #form-email {
@@ -207,6 +221,7 @@
 
       .submit {
         width: auto;
+        margin-bottom: 0;
       }
 
       #form-first_name, #form-last_name, .country_wrap, .control-group, .control-label, #d_sharing {
@@ -219,9 +234,15 @@
     }
   }
 
-  #form_col2 {
-    visibility: hidden;
+  .fb-page {
+    padding-left: 10%;
+
+    // #u_0_2, #u_0_3 {
+    //   color: #eee !important;
+    // }
+
   }
+
 }
 
 #petition {
@@ -253,6 +274,17 @@
     li {
       list-style: none;
       // text-align: left;
+    }
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .nav-signup {
+    padding-top: 20px;
+    #can-form-area-e9ab2a019489a0211ea7a6a8e3e181143119ecfe, .fb-page {
+      display: block;
+      padding-bottom: 10px;
+      padding-left: 0;
     }
   }
 }
