@@ -9,6 +9,7 @@ $(document).ready(function() {
     } else {
       $('.submit').hide();
     }
+    $('.fb-page').show();
   })
 
   $("#showPetition").on("click", function(){

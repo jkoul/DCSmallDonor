@@ -224,7 +224,7 @@
         margin-bottom: 0;
       }
 
-      #form-first_name, #form-last_name, .country_wrap, .control-group, .control-label, #d_sharing {
+      #form-first_name, #form-last_name, .country_wrap, .control-group, .control-label, #d_sharing, #form_col2 img {
         display: none;
       }
     }
@@ -236,6 +236,7 @@
 
   .fb-page {
     padding-left: 10%;
+    visibility: hidden;
 
     // #u_0_2, #u_0_3 {
     //   color: #eee !important;
