@@ -1,0 +1,11 @@
+<%= form_for ([@organization]) do |f| %>
+  <%= f.label :name %>
+  <%= f.text_field :name, :placeholder => "Org Name" %>
+
+  <%= f.label :orgtype, "Type" %>
+  <%= f.text_field :orgtype, :placeholder => "Local/National/etc" %>
+
+  <%= f.label :orgUrl, "Organization Link" %>
+  <%= f.text_field :orgUrl, :placeholder => "Ex: http://organization.com" %>
+  <%= f.submit %>
+<% end %>

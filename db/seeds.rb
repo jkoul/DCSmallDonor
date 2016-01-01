@@ -7,6 +7,7 @@
 #   Mayor.create(name: 'Emanuel', city: cities.first)
 
 Organization.destroy_all
+Article.destroy_all
 
 Organization.create(name: "Area Neighborhood Commission 3F", orgtype: "community", orgUrl: "http://anc.dc.gov/page/advisory-neighborhood-commission-3f")
 Organization.create(name: "Asian Pacific American Labor Alliance - DC Chapter", orgtype: "local", orgUrl: "http://www.apalanet.org/washington_dc")

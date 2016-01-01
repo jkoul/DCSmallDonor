@@ -1,0 +1,23 @@
+<h2>List of Coalition Members</h2>
+<%= link_to "Add New Member", new_organization_path, :class => "btn btn-lg btn-primary" %>
+
+<ul class="admin-org-list">
+  <% @organizations.each do |org| %>
+    <li class="each">
+      <span class="admin-org-name-link">
+        <%= link_to "#{org.name}", org.orgUrl %>
+      </span>
+      <span class="admin-org-type">Type: <%= org.orgtype %></span>
+      <span class="admin-org-edit-delete">
+        <div class="org-edit">
+          <%= link_to "Edit Organization", edit_organization_path(org), :class => "btn btn-sm btn-default" %>
+        </div>
+        <div class="org-delete">
+          <%= form_for(org, method: :delete) do |f| %>
+            <%= f.submit "Delete Organization", :class => "btn btn-sm btn-danger" %>
+          <% end %>
+        </div>
+      </span>
+    </li>
+  <% end %>
+</ul>

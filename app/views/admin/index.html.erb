@@ -1,0 +1,21 @@
+<div class="row admin-portal-main">
+  <h2>DC Fair Elections Coalition</h2>
+  <h3>Administration Portal</h3>
+
+  <div class="col-md-6 col-xs-12 orgs">
+    <h3>Coalition Member Management</h3>
+    <div class="orgs-count">
+      Number of Coalition Members: <%= @organizations.count %>
+    </div>
+    <%= link_to "View List", organizations_path, :class => "btn btn-lg btn-primary" %>
+    <%= link_to "Add New Member", new_organization_path, :class => "btn btn-lg btn-danger" %>
+  </div>
+
+  <div class="col-md-6 col-xs-12 news">
+    <h3>News Section Management</h3>
+    <div class="news-count">
+      Number of Items: <%= @articles.count %> 
+      <%= link_to "View List", articles_path, :class => "btn btn-lg btn-primary" %>
+      <%= link_to "Add New Item", new_article_path, :class => "btn btn-lg btn-danger" %>
+  </div>
+</div>

@@ -1,5 +1,7 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
+@import "bootstrap-datepicker3";
+@import "bootstrap-custom";
 
 @import "*";
 
@@ -10,6 +12,7 @@
 //   height: 400px;
 //   text-align: center !important;
 // }
+
 
 .navbar {
   margin-bottom: 0;

@@ -1,0 +1,54 @@
+.admin-portal-main {
+  text-align: center;
+
+  .orgs, .news {
+    a {
+      width: 50%;
+      display: block;
+      margin: 2em auto;
+
+    }
+  }
+}
+
+
+
+
+.admin-org-list {
+  list-style: none;
+
+  .each {
+    width: 100%;
+    padding: 10px 0;
+
+    .admin-org-name-link, .admin-org-type {
+      padding: 10px;
+
+      a {
+        font-size: 16px;
+      }
+    }
+
+    .admin-org-edit-delete {
+      float: right;
+      .org-edit, .org-delete {
+        padding: 0 10px;
+        display: inline-block;
+      }
+    }
+  }
+}
+
+.org-new-page, .org-edit-page, .article-new-page, .article-edit-page {
+
+  form {
+    margin: 50px;
+
+    input[type="text"] {
+      display: block;
+      font-size: 20px;
+      min-width: 50%;
+      margin-bottom: 20px;
+    }
+  }
+}

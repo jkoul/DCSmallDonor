@@ -1,0 +1,19 @@
+
+<%= form_for ([@article]) do |f| %>
+  <%= f.label :title %>
+  <%= f.text_field :title, :placeholder => "Title" %>
+
+  <%= f.label :date, "Article Date" %>
+  <%= f.text_field :date, :placeholder => "MM/DD/YYYY", :class => "datepicker" %>
+
+  <%= f.label :source, "News Outlet/Organization" %>
+  <%= f.text_field :source, :placeholder => "eg Washington Post" %>
+
+  <%= f. label :type, "Press Hit or Internal Source?" %>
+  <%= f.select :type, [['Press', 'External'], ['Coalition', 'Internal']] %>
+
+  <%= f.label :url, "Article Link" %>
+  <%= f.text_field :url, :placeholder => "Ex: http://organization.com/article-xyz" %>
+
+  <%= f.submit %>
+<% end %>

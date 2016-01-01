@@ -20,4 +20,6 @@ $(document).ready(function() {
       $('#showPetition').html('Hide Petition Text');
     }
   });
+
+  $('.datepicker').datepicker();
 })
