@@ -53,3 +53,10 @@ Organization.create(name: "Washington Ethical Society", orgtype: "local", orgUrl
 Organization.create(name: "We Are Family", orgtype: "local", orgUrl: "http://www.wearefamilydc.org/")
 Organization.create(name: "William H. Lamar IV, Pastor, Metropolitan AME Church", orgtype: "individual", orgUrl: "http://www.metropolitaname.org/")
 Organization.create(name: "The Assisi Community", orgtype: "local")
+
+Article.create(title: "U.S. Rep. John Sarbanes On How Money Influences Politics, Locally And Nationally", date: "2015-12-01", source: "The Kojo Nnamdi Show, WAMU 88.5", url: "http://thekojonnamdishow.org/shows/2015-12-01/u-s-rep-john-sarbanes-on-how-money-influences-politics-locally-and-nationally", articleType: "Press")
+Article.create(title: "DC Council to consider public financing of campaigns", source: "Associated Press", date: "2015-12-01", url: "https://www.washingtonpost.com/local/dc-council-to-consider-public-financing-of-campaigns/2015/12/01/e67af82e-985c-11e5-aca6-1ae3be6f06d2_story.html", articleType: "Press")
+Article.create(title: "Proposal Seeks To Weaken Special Interests' Influence Over D.C. Elections", date: "2015-12-01", source: "WAMU", url: "https://wamu.org/news/15/12/01/proposal_seeks_to_weaken_special_interests_influence_over_dc_elections", articleType: "Press")
+Article.create(title: "The sudden end of FreshPAC", date: "2015-11-13", source: "Washington Post LTE", url: "https://www.washingtonpost.com/opinions/the-sudden-end-of-freshpac/2015/11/13/f8ce5b60-88c6-11e5-bd91-d385b244482f_story.html", articleType: "Press")
+Article.create(title: "CWA Stands With Democracy Initiative Partners For Fair Elections In Washington, DC", date: "2015-12-03", source: "Communication Workers of America", url: "http://www.cwa-union.org/news/entry/cwa_stands_with_democracy_initiative_partners_for_fair_elections_in_washing#.VncNzRorKu4", articleType: "Coalition")
+Article.create(title: "D.C. Council Introduces Fair Elections Legislation", date: "2015-12-01", source: "US PIRG", url: "http://www.uspirg.org/news/usp/dc-council-introduces-fair-elections-legislation", articleType: "Coalition")
