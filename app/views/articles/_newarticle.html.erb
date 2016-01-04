@@ -4,13 +4,18 @@
   <%= f.text_field :title, :placeholder => "Title" %>
 
   <%= f.label :date, "Article Date" %>
-  <%= f.text_field :date, :placeholder => "MM/DD/YYYY", :class => "datepicker" %>
+  <%= f.text_field :date, :placeholder => "yyyy-mm-dd", :class => "datepicker" %>
 
   <%= f.label :source, "News Outlet/Organization" %>
   <%= f.text_field :source, :placeholder => "eg Washington Post" %>
 
-  <%= f. label :type, "Press Hit or Internal Source?" %>
-  <%= f.select :type, [['Press', 'External'], ['Coalition', 'Internal']] %>
+  <div class="article-type">
+  <h4>Press Hit or Internal Source?</h4>
+  <%= f.radio_button :articleType, "Press" %>
+  <%= f.label :articleType, "Press", :value => "press" %>
+  <%= f.radio_button :articleType, "Coalition" %>
+  <%= f.label :articleType, "Coalition", :value => "coalition" %>
+  </div>
 
   <%= f.label :url, "Article Link" %>
   <%= f.text_field :url, :placeholder => "Ex: http://organization.com/article-xyz" %>

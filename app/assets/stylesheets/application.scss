@@ -26,7 +26,12 @@
       display: inline-block;
 
       a {
-        padding-top: 5px;
+        color: #ccc;
+        font-size: 16px;
+        &:hover {
+          background: #ccc;
+          color: #222;
+        }
       }
     }
     .navbar-brand {
@@ -152,6 +157,11 @@
 
 
 #homePetition {
+
+  .petition-button {
+    padding-top: 30px;
+  }
+
   #can_embed_form_inner {
     margin-top: 30px;
     h3, h4 {
@@ -271,7 +281,7 @@
   color: #ccc;
   text-align: center;
 
-  .contacts {
+  #contacts {
     // margin: 0 20%;
     padding-left: 0;
     text-align: center;

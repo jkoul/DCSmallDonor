@@ -20,9 +20,9 @@
             <li><%= link_to "Why Fair Elections?", "/about" %></li>
             <li><%= link_to "FAQ", "/faq" %></li>
             <li><%= link_to "About the Coalition", "/#coalition" %></li>
-            <li><%= link_to "Get Involved", "/#action" %></li>
-            <li><%= link_to "News", "/#news" %></li>
-            <li><%= link_to "Contact", "/#contact" %></li>
+            <li><%= link_to "Get Involved", "/#homePetition" %></li>
+            <li><%= link_to "News", "/#newsSummary" %></li>
+            <li><%= link_to "Contact", "/#contacts" %></li>
             <li class="nav-signup">
                 <script>window.yepnope || document.write('<script src="https://actionnetwork.org/includes/js/yepnope154-min.js"><\/script>');</script>
                 <script src='https://actionnetwork.org/widgets/v2/form/e9ab2a019489a0211ea7a6a8e3e181143119ecfe?format=js&source=widget'></script>
@@ -53,7 +53,7 @@
 <footer class="row footer">
   <div class="col-md-12">
     <h3>Contacts</h3>
-    <ul class="contacts">
+    <ul id="contacts">
       <li><strong>Media:</strong> <span>Delvone Michael, DC Working Families, </span><span>dmichael@workingfamilies.org</span></li>
       <li><strong>Coalition Membership:</strong> <span>Aquene Freechild, Public Citizen, </span><span>afreechild@citizen.org</span></li>
       <li><strong>Website/Digital Engagement:</strong> <span>Jeremy Koulish, DC for Democracy, </span><span>jeremy.koulish@gmail.com</span></li>
@@ -64,11 +64,16 @@
   <div class="container">
     <ul class="nav navbar-nav">
       <li><%= link_to "Home", root_url %></li>
+      <li><%= link_to "Why Fair Elections?", "/about" %></li>
+      <li><%= link_to "FAQ", "/faq" %></li>
       <li><%= link_to "About the Coalition", "/#coalition" %></li>
-      <li><%= link_to "Why Fair Elections?", "/#about" %></li>
-      <li><%= link_to "Get Involved", "/#action" %></li>
-      <li><%= link_to "News", "/#news" %></li>
-      <li><%= link_to "Contact", "/#contact" %></li>
+      <li><%= link_to "Get Involved", "/#homePetition" %></li>
+      <li><%= link_to "News", "/#newsSummary" %></li>
+      <li><%= link_to "Contact", "/#contacts" %></li>
+      <li class="nav-signup">
+          <div class="fb-page" data-href="https://www.facebook.com/DCFairElections/" data-tabs="timeline, events" data-height="70" data-small-header="true" data-adapt-container-width="true" data-hide-cover="true" data-show-facepile="false"><div class="fb-xfbml-parse-ignore"><blockquote cite="https://www.facebook.com/DCFairElections/"><a href="https://www.facebook.com/DCFairElections/">DC Fair Elections Coalition</a></blockquote></div></div>
+      </li>
+    </ul>
     </div>
   </div>
 </footer>

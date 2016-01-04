@@ -20,10 +20,10 @@ ActiveRecord::Schema.define(version: 20151231221808) do
     t.string   "title"
     t.date     "date"
     t.string   "source"
-    t.string   "type"
+    t.string   "articleType"
     t.string   "url"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
+    t.datetime "created_at",  null: false
+    t.datetime "updated_at",  null: false
   end
 
   create_table "organizations", force: :cascade do |t|

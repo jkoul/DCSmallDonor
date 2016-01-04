@@ -2,6 +2,8 @@ class ArticlesController < ApplicationController
 
   def index
     @articles = Article.all.order(:date).reverse
+    @press = @articles.select {|article| article.articleType == "Press"}
+    @coalition = @articles.select {|article| article.articleType == "Coalition"}
   end
 
   def show
@@ -14,6 +16,8 @@ class ArticlesController < ApplicationController
 
   def create
     @article = Article.create!(article_params)
+    @date = @article.date
+    @date.strftime("%B %e, %Y")
     redirect_to articles_path
   end
 
@@ -35,7 +39,7 @@ class ArticlesController < ApplicationController
 
   private
     def article_params
-      params.require(:title, :date).permit(:source, :type, :url)
+      params.require(:article).permit(:date, :title, :source, :articleType, :url)
     end
 
 end

@@ -1,0 +1,60 @@
+<h2>List of Coalition News Articles</h2>
+<%= link_to "Add New Article", new_article_path, :class => "btn btn-lg btn-primary" %>
+
+<div class="col-md-12">
+  <h3>Press Coverage</h3>
+  <div class="row">
+    <ul class="admin-article-list">
+      <% @press.each do |item| %>
+      <li class="row each">
+        <div class="col-md-8 col-xs-12">
+          <div><%= link_to item.title, item.url, :target => "_blank" %></div>
+          <div><strong>Source:</strong> <%= item.source %>; <strong>Date:</strong> <%= item.date.strftime("%B %e, %Y") %>
+          </div>
+        </div>
+        <div class="col-md-4 col-xs-12 admin-edit-delete">
+          <div class="edit">
+            <%= link_to "Edit Article Info", edit_article_path(item), :class => "btn btn-sm btn-default" %>
+          </div>
+          <div class="delete">
+            <%= form_for(item, method: :delete) do |f| %>
+              <%= f.submit "Delete Article", :class => "btn btn-sm btn-danger" %>
+            <% end %>
+          </div>
+        </div>
+      </li>
+      <% end %>
+      <!-- <li><a href="https://wamu.org/news/15/12/01/proposal_seeks_to_weaken_special_interests_influence_over_dc_elections" target="_blank">Proposal Seeks To Weaken Special Interests' Influence Over D.C. Elections</a><br/ >WAMU, December 1</li>
+      <li><a href="https://www.washingtonpost.com/opinions/the-sudden-end-of-freshpac/2015/11/13/f8ce5b60-88c6-11e5-bd91-d385b244482f_story.html" target="_blank">The sudden end of FreshPAC</a><br/ >Washington Post LTE, November 13</li>
+      <li><a href="https://www.washingtonpost.com/local/dc-council-to-consider-public-financing-of-campaigns/2015/12/01/e67af82e-985c-11e5-aca6-1ae3be6f06d2_story.html" target="_blank">DC Council to consider public financing of campaigns</a><br/ >Associated Press, December 1</li>
+      <li><a href="http://thekojonnamdishow.org/shows/2015-12-01/u-s-rep-john-sarbanes-on-how-money-influences-politics-locally-and-nationally" target="_blank">U.S. Rep. John Sarbanes On How Money Influences Politics, Locally And Nationally</a><br/ >The Kojo Nnamdi Show, WAMU 88.5, December 1</li> -->
+    </ul>
+  </div>
+</div>
+
+<div class="col-md-12">
+  <h3>Coalition Partner Releases</h3>
+  <div class="row">
+    <ul class="admin-article-list">
+      <% @coalition.each do |item| %>
+      <li class="row each">
+        <div class="col-md-8 col-xs-12">
+          <div><%= link_to item.title, item.url, :target => "_blank" %></div>
+          <div><strong>Source:</strong> <%= item.source %>; <strong>Date:</strong> <%= item.date.strftime("%B %e, %Y") %>
+          </div>
+        </div>
+        <div class="col-md-4 col-xs-12 admin-edit-delete">
+          <div class="edit">
+            <%= link_to "Edit Article Info", edit_article_path(item), :class => "btn btn-sm btn-default" %>
+          </div>
+          <div class="delete">
+            <%= form_for(item, method: :delete) do |f| %>
+              <%= f.submit "Delete Article", :class => "btn btn-sm btn-danger" %>
+            <% end %>
+          </div>
+        </div>
+      </li>
+      <% end %>
+    </ul>
+  </div>
+</div>

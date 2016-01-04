@@ -8,11 +8,11 @@
         <%= link_to "#{org.name}", org.orgUrl %>
       </span>
       <span class="admin-org-type">Type: <%= org.orgtype %></span>
-      <span class="admin-org-edit-delete">
-        <div class="org-edit">
+      <span class="admin-edit-delete">
+        <div class="edit">
           <%= link_to "Edit Organization", edit_organization_path(org), :class => "btn btn-sm btn-default" %>
         </div>
-        <div class="org-delete">
+        <div class="delete">
           <%= form_for(org, method: :delete) do |f| %>
             <%= f.submit "Delete Organization", :class => "btn btn-sm btn-danger" %>
           <% end %>

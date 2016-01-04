@@ -14,12 +14,14 @@
 
 
 
-.admin-org-list {
+.admin-org-list, .admin-article-list {
   list-style: none;
+  padding-left: 5px;
 
   .each {
     width: 100%;
     padding: 10px 0;
+
 
     .admin-org-name-link, .admin-org-type {
       padding: 10px;
@@ -29,9 +31,9 @@
       }
     }
 
-    .admin-org-edit-delete {
+    .admin-edit-delete {
       float: right;
-      .org-edit, .org-delete {
+      .edit, .delete {
         padding: 0 10px;
         display: inline-block;
       }
