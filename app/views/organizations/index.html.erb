@@ -1,3 +1,11 @@
+<% if current_user %>
+<div>
+  <h3>Welcome, <%= @user.email %>!</h3>
+  <%= link_to "Sign Out", destroy_user_session_path, :method => :delete, :class => "btn btn-danger" %>
+  <%= link_to "Back to Admin Portal", "/admin", :class => "btn btn-primary" %>
+</div>
+<% end %>
+
 <h2>List of Coalition Members</h2>
 <%= link_to "Add New Member", new_organization_path, :class => "btn btn-lg btn-primary" %>
 

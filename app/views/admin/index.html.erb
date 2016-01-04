@@ -1,3 +1,9 @@
+<% if current_user %>
+<div>
+  <h3>Welcome, <%= @user.email %>!</h3>
+  <%= link_to "Sign Out", destroy_user_session_path, :method => :delete, :class => "btn btn-danger" %>
+</div>
+<% end %>
 <div class="row admin-portal-main">
   <h2>DC Fair Elections Coalition</h2>
   <h3>Administration Portal</h3>
@@ -14,7 +20,7 @@
   <div class="col-md-6 col-xs-12 news">
     <h3>News Section Management</h3>
     <div class="news-count">
-      Number of Items: <%= @articles.count %> 
+      Number of Items: <%= @articles.count %>
       <%= link_to "View List", articles_path, :class => "btn btn-lg btn-primary" %>
       <%= link_to "Add New Item", new_article_path, :class => "btn btn-lg btn-danger" %>
   </div>

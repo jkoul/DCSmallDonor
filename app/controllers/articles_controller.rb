@@ -2,6 +2,7 @@ class ArticlesController < ApplicationController
   before_action :authenticate_user!
 
   def index
+    @user = current_user
     @articles = Article.all.order(:date).reverse
     @press = @articles.select {|article| article.articleType == "Press"}
     @coalition = @articles.select {|article| article.articleType == "Coalition"}

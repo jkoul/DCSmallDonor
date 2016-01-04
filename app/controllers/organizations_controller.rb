@@ -2,6 +2,7 @@ class OrganizationsController < ApplicationController
   before_action :authenticate_user!
 
   def index
+    @user = current_user
     @organizations = Organization.all.order(:name)
   end
 

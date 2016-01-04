@@ -4,6 +4,7 @@ class AdminController < ApplicationController
   def index
     @organizations = Organization.all.order(:name)
     @articles = Article.all.order(:date).reverse
+    @user = current_user
   end
 
 end
