@@ -9,7 +9,7 @@
 Organization.destroy_all
 Article.destroy_all
 
-Organization.create(name: "Area Neighborhood Commission 3F", orgtype: "community", orgUrl: "http://anc.dc.gov/page/advisory-neighborhood-commission-3f")
+Organization.create(name: "Advisory Neighborhood Commission 3F", orgtype: "community", orgUrl: "http://anc.dc.gov/page/advisory-neighborhood-commission-3f")
 Organization.create(name: "Asian Pacific American Labor Alliance - DC Chapter", orgtype: "local", orgUrl: "http://www.apalanet.org/washington_dc")
 Organization.create(name: "Brennan Center for Justice", orgtype: "national", orgUrl: "http://www.brennancenter.org/")
 Organization.create(name: "Code Pink DC", orgtype: "local", orgUrl: "http://www.codepink.org/")
