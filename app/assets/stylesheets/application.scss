@@ -195,7 +195,7 @@
   }
 
   #can-petition-area-support-small-donor-democracy-in-dc h4 {
-    display: none;  
+    display: none;
   }
 
   h2,h3,h4, #action_info .action_info_user, #d_sharing li {
@@ -213,6 +213,7 @@
 
 #petitionDetail {
   display: none;
+  margin-top: 15px;
 }
 
 #petitionDetail, #letterIntro {
@@ -329,11 +330,26 @@
 #about {
   margin-bottom: 80px;
 
+  h2, h3 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
   .nav-tabs {
+    margin-bottom: 20px;
     .nav-header {
       float: left;
+      margin-left: 50px;
       margin-right: 50px;
       display: inline-block;
+    }
+  }
+
+  .well {
+    border: 1px solid #337AB7;
+
+    p {
+      text-align: justify;
     }
   }
 }
