@@ -13,8 +13,8 @@ $(document).ready(function() {
   })
 
   $("#showPetition").on("click", function(){
-    $('#action').toggle();
-    if($.trim($('#action').val()) === "" && $('#action').is(":hidden")) {
+    $('#petitionDetail').toggle();
+    if($.trim($('#petitionDetail').val()) === "" && $('#petitionDetail').is(":hidden")) {
       $('#showPetition').html('Show Petition Text');
     } else {
       $('#showPetition').html('Hide Petition Text');

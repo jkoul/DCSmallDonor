@@ -25,7 +25,7 @@ class OrganizationsController < ApplicationController
 
   def update
     @organization = Organization.find(params[:id])
-    @organization.update(entry_params)
+    @organization.update(org_params)
     redirect_to organizations_path
   end
 
@@ -37,7 +37,7 @@ class OrganizationsController < ApplicationController
 
   private
     def org_params
-      params.require(:name).permit(:orgtype, :orgUrl)
+      params.require(:organization).permit(:name, :orgtype, :orgUrl)
     end
 
 end

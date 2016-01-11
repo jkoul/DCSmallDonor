@@ -5,6 +5,14 @@
 
 @import "*";
 
+@mixin clearfix() {
+  &:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
+
 
 
 // #homeCarousel {
@@ -12,7 +20,6 @@
 //   height: 400px;
 //   text-align: center !important;
 // }
-
 
 .navbar {
   margin-bottom: 0;
@@ -68,9 +75,11 @@
 .container {
   max-width: 1000px;
   margin: 0 auto;
-  &.main {
-    background: #fcfcfc;
-  }
+}
+
+.main {
+  background: #fcfcfc;
+  margin: 0 auto;
 }
 
 #home {
@@ -82,8 +91,12 @@
     margin: 20px auto;
 
     .carousel-caption {
-      top: 80px;
+      top: 25%;
       background-color: rgba(80,80,80, 0.5);
+    }
+
+    img {
+      width: 100%;
     }
   }
 
@@ -151,12 +164,24 @@
 }
 
 .section {
-  border-top: 15px solid #fff;
-  border-bottom: 15px solid #fff;
+  border-width: 15px 40px 15px 40px;
+  border-style: solid;
+  border-color: #fff;
+  overflow: hidden;
+
+  &:hover {
+    background: darken(#fcfcfc, 10%);
+
+    .well {
+      background: darken(#e9e9e9, 10%) !important;
+      border: 1px solid #337AB7 !important;
+    }
+  }
 }
 
 
 #homePetition {
+
 
   .petition-button {
     padding-top: 30px;
@@ -164,10 +189,15 @@
 
   #can_embed_form_inner {
     margin-top: 30px;
-    h3, h4 {
+    h2, h3 {
       display: none;
     }
   }
+
+  #can-petition-area-support-small-donor-democracy-in-dc h4 {
+    display: none;  
+  }
+
   h2,h3,h4, #action_info .action_info_user, #d_sharing li {
     text-align: center !important;
   }
@@ -181,8 +211,12 @@
   }
 }
 
-#action {
+#petitionDetail {
   display: none;
+}
+
+#petitionDetail, #letterIntro {
+  width: 100%;
 }
 
 .nav-signup {
@@ -292,7 +326,22 @@
   }
 }
 
+#about {
+  margin-bottom: 80px;
+
+  .nav-tabs {
+    .nav-header {
+      float: left;
+      margin-right: 50px;
+      display: inline-block;
+    }
+  }
+}
+
 @media screen and (max-width: 992px) {
+  .section {
+    border: 0;
+  }
   .nav-signup {
     padding-top: 20px;
     #can-form-area-e9ab2a019489a0211ea7a6a8e3e181143119ecfe, .fb-page {
@@ -301,6 +350,10 @@
       padding-left: 0;
     }
   }
+}
+
+.row {
+  margin: auto;
 }
 
 @media screen and (max-width: 767px) {

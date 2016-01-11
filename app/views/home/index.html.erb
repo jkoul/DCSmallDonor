@@ -1,132 +1,123 @@
 <div id="home">
-  <div class="col-md-12">
-    <h1>DC Fair Elections Coalition</h1>
-    <h2>Reclaiming our Democracy in the District of Columbia</h2>
-  </div>
-
-  <div class="col-md-12">
-    <div id="homeCarousel" class="carousel slide" data-ride="carousel">
-      <ol class="carousel-indicators">
-        <li data-target="#homeCarousel" data-slide-to="0" class="active"></li>
-        <li data-target="#homeCarousel" data-slide-to="1"></li>
-        <li data-target="#homeCarousel" data-slide-to="2"></li>
-      </ol>
-
-      <div class="carousel-inner" role="listbox">
-        <div class="item active">
-          <a href="/about">
-            <%= image_tag("carousel_1.png", alt: "About Fair Elections")%>
-            <div class="carousel-caption">
-              <h2>About Small-Donor Democracy</h2>
-              <p>Learn about the movement for fair elections, why it matters here, and the bill in DC Council.</p>
-            </div>
-          </a>
-        </div>
-        <div class="item">
-          <a href="#homePetition">
-            <%= image_tag("carousel_2.png", alt: "Get Involved")%>
-            <div class="carousel-caption">
-              <h2>Get Involved</h2>
-              <p>Take action to support the Citizens Fair Election Program Amendment Act of 2015.</p>
-            </div>
-          </a>
-        </div>
-        <div class="item">
-          <a href="#coalition">
-            <%= image_tag("launch.png", alt: "About the Coalition")%>
-            <div class="carousel-caption">
-              <h2>About the Fair Elections Coalition</h2>
-              <p>The coalition is led by a mix of local and national grassroots organizations and their members.</p>
-            </div>
-          </a>
-        </div>
-      </div>
-        <!-- Left and right controls -->
-      <a class="left carousel-control" href="#homeCarousel" role="button" data-slide="prev">
-        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-        <span class="sr-only">Previous</span>
-      </a>
-      <a class="right carousel-control" href="#homeCarousel" role="button" data-slide="next">
-        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-        <span class="sr-only">Next</span>
-      </a>
+  <div class="row section">
+    <div class="col-md-12">
+      <h1>DC Fair Elections Coalition</h1>
+      <h2>Reclaiming our Democracy in the District of Columbia</h2>
     </div>
-  </div>
 
-  <div class="row section summary-sections">
-    <div class="col-md-6 col-xs-12">
-      <div class="well" id="aboutSummary">
-        <h3>Fair Elections Legislation</h3>
-        <h4>Highlights of Small Donor Empowerment Legislation in DC:</h4>
-        <ul>
-          <!-- <li>Introduced on December 1, 2015, as B21-0509, the "Citizens Fair Election Program Amendment Act of 2015".</li>
-          <li>Introduced by Councilmember David Grosso</li>
-          <li>Co-sponsored by Chairman Phil Mendelson and Councilmembers Charles Allen, Mary Cheh, Brianne Nadeau, and Elissa Silverman.</li> -->
-          <li>Would cover the offices of Mayor, City Council, and Attorney General.</li>
-          <li>Participating candidates qualify for the program by collecting a certain number of contributions of $100 or less from DC residents.</li>
-          <li>The program provides a base grant to qualifying candidates and a 5:1 public match on all subsequent eligible contributions.</li>
-          <li>Participating candidates cannot accept contributions larger than $100 and cannot coordinate with independent expenditure committees.</li>
-          <li>The total amount of matching funds a candidate can receive is capped based on the average cost of recent winning campaigns for that office.</li>
-        </ul>
-        <!-- <button class="btn btn-primary btn-lg"><%= link_to "Learn More", "#about" %></button> -->
-        <button class="btn btn-primary btn-lg"><%= link_to "Become a Citizen Co-Sponsor", "#homePetition" %></button>
-      </div>
-      <div class="well" id="whySummary">
-        <h3>Why Fair Elections?</h3>
-        <h4>What this legislation would do for DC:</h4>
-        <ul>
-          <li>Make D.C. elected officials more accountable to D.C. residents.</li>
-          <li>Give candidates a way to fund their campaigns by motivating supporters in the communities they serve, rather than high-dollar donors looking for a sweetheart deal in return.</li>
-          <li>Provide a bullhorn to ensure the voices of everyday citizens are continually heard in the Wilson Building.</li>
-          <li>Increase the range of choices by giving grassroots-oriented candidates a means to get their message out.</li>
-        </ul>
-        <button class="btn btn-primary btn-lg"><%= link_to "Learn More", "/about" %></button>
+    <div class="col-md-12">
+      <div id="homeCarousel" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+          <li data-target="#homeCarousel" data-slide-to="0" class="active"></li>
+          <li data-target="#homeCarousel" data-slide-to="1"></li>
+          <li data-target="#homeCarousel" data-slide-to="2"></li>
+        </ol>
+
+        <div class="carousel-inner" role="listbox">
+          <div class="item active">
+            <a href="/about">
+              <%= image_tag("carousel_1.png", alt: "About Fair Elections")%>
+              <div class="carousel-caption">
+                <h2>About Small-Donor Democracy</h2>
+                <p>Learn about the movement for fair elections, why it matters here, and the bill in DC Council.</p>
+              </div>
+            </a>
+          </div>
+          <div class="item">
+            <a href="#homePetition">
+              <%= image_tag("carousel_2.png", alt: "Get Involved")%>
+              <div class="carousel-caption">
+                <h2>Get Involved</h2>
+                <p>Take action to support the Citizens Fair Election Program Amendment Act of 2015.</p>
+              </div>
+            </a>
+          </div>
+          <div class="item">
+            <a href="#coalition">
+              <%= image_tag("launch.png", alt: "About the Coalition")%>
+              <div class="carousel-caption">
+                <h2>About the Fair Elections Coalition</h2>
+                <p>The coalition is led by a mix of local and national grassroots organizations and their members.</p>
+              </div>
+            </a>
+          </div>
+        </div>
+          <!-- Left and right controls -->
+        <a class="left carousel-control" href="#homeCarousel" role="button" data-slide="prev">
+          <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="right carousel-control" href="#homeCarousel" role="button" data-slide="next">
+          <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
       </div>
     </div>
 
-    <div class="col-md-6 col-xs-12">
-      <div class="well" id="newsSummary">
-        <h3>Recent News</h3>
-        <h4>Press Coverage</h4>
-        <ul>
-          <% @press.each do |item| %>
-          <li>
-            <div><%= link_to item.title, item.url, :target => "_blank" %></div>
-            <div><%= item.source %>, <%= item.date.strftime("%B %e, %Y") %></div>
-          </li>
-          <% end %>
-        </ul>
-        <h4>Coalition Partner Releases</h4>
-        <ul>
-          <% @coalition.each do |item| %>
-          <li>
-            <div><%= link_to item.title, item.url, :target => "_blank" %></div>
-            <div><%= item.source %>, <%= item.date.strftime("%B %e, %Y") %></div>
-          </li>
-          <% end %>
-        </ul>
-        <!-- <button class="btn btn-primary btn-lg"><%= link_to "See All News", "#news" %></button> -->
+
+    <div class="summary-sections">
+      <div class="col-md-6 col-xs-12">
+        <div class="well" id="aboutSummary">
+          <h3>Fair Elections Legislation</h3>
+          <h4>Highlights of Small Donor Empowerment Legislation in DC:</h4>
+          <ul>
+            <!-- <li>Introduced on December 1, 2015, as B21-0509, the "Citizens Fair Election Program Amendment Act of 2015".</li>
+            <li>Introduced by Councilmember David Grosso</li>
+            <li>Co-sponsored by Chairman Phil Mendelson and Councilmembers Charles Allen, Mary Cheh, Brianne Nadeau, and Elissa Silverman.</li> -->
+            <li>Would cover the offices of Mayor, City Council, and Attorney General.</li>
+            <li>Participating candidates qualify for the program by collecting a certain number of contributions of $100 or less from DC residents.</li>
+            <li>The program provides a base grant to qualifying candidates and a 5:1 public match on all subsequent eligible contributions.</li>
+            <li>Participating candidates cannot accept contributions larger than $100 and cannot coordinate with independent expenditure committees.</li>
+            <li>The total amount of matching funds a candidate can receive is capped based on the average cost of recent winning campaigns for that office.</li>
+          </ul>
+          <!-- <button class="btn btn-primary btn-lg"><%= link_to "Learn More", "#about" %></button> -->
+          <button class="btn btn-primary btn-lg"><%= link_to "Become a Citizen Co-Sponsor", "#homePetition" %></button>
+        </div>
+        <div class="well" id="whySummary">
+          <h3>Why Fair Elections?</h3>
+          <h4>What this legislation would do for DC:</h4>
+          <ul>
+            <li>Make D.C. elected officials more accountable to D.C. residents.</li>
+            <li>Give candidates a way to fund their campaigns by motivating supporters in the communities they serve, rather than high-dollar donors looking for a sweetheart deal in return.</li>
+            <li>Provide a bullhorn to ensure the voices of everyday citizens are continually heard in the Wilson Building.</li>
+            <li>Increase the range of choices by giving grassroots-oriented candidates a means to get their message out.</li>
+          </ul>
+          <button class="btn btn-primary btn-lg"><%= link_to "Learn More", "/about" %></button>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-xs-12">
+        <div class="well" id="newsSummary">
+          <h3>Recent News</h3>
+          <h4>Press Coverage</h4>
+          <ul>
+            <% @press.each do |item| %>
+            <li>
+              <div><%= link_to item.title, item.url, :target => "_blank" %></div>
+              <div><%= item.source %>, <%= item.date.strftime("%B %e, %Y") %></div>
+            </li>
+            <% end %>
+          </ul>
+          <h4>Coalition Partner Releases</h4>
+          <ul>
+            <% @coalition.each do |item| %>
+            <li>
+              <div><%= link_to item.title, item.url, :target => "_blank" %></div>
+              <div><%= item.source %>, <%= item.date.strftime("%B %e, %Y") %></div>
+            </li>
+            <% end %>
+          </ul>
+          <!-- <button class="btn btn-primary btn-lg"><%= link_to "See All News", "#news" %></button> -->
+        </div>
       </div>
     </div>
   </div>
 
   <div class="row section" id="homePetition">
-    <div class="col-md-12 petition-button">
-        <button type="button" class="btn btn-info btn-lg" id="showPetition">Show Petition Text</button>
-      <div class="row" id="action">
-        <%= render 'petition' %>
-      </div>
-    </div>
-    <div class="col-md-12 col-xs-12">
-      <link href='https://actionnetwork.org/css/style-embed-whitelabel.css' rel='stylesheet' type='text/css' />
-      <script>window.yepnope || document.write('<script src="https://actionnetwork.org/includes/js/yepnope154-min.js"><\/script>');</script>
-      <script src='https://actionnetwork.org/widgets/v2/petition/support-small-donor-democracy-in-dc?format=js&source=widget'></script>
-      <div id='can-petition-area-support-small-donor-democracy-in-dc' style='width:100%'>
-        <!-- this div is the target for our HTML insertion -->
-      </div>
+    <div class="row" id="action">
+      <%= render 'action' %>
     </div>
   </div>
-</div>
 <!--
 
 <div class="row" id="news">
