@@ -3,7 +3,7 @@ class ArticlesController < ApplicationController
 
   def index
     @user = current_user
-    @articles = Article.all.order(:date).reverse
+    @articles = Article.select{|article| article.articleType != "File"}
     @press = @articles.select {|article| article.articleType == "Press"}
     @coalition = @articles.select {|article| article.articleType == "Coalition"}
   end
@@ -18,9 +18,14 @@ class ArticlesController < ApplicationController
 
   def create
     @article = Article.create!(article_params)
-    @date = @article.date
-    @date.strftime("%B %e, %Y")
-    redirect_to articles_path
+    if @article.articleType != "File"
+      @date = @article.date
+      @date.strftime("%B %e, %Y")
+      redirect_to articles_path
+    elsif @article.articleType == "File"
+      @article.update( date: Time.now.strftime("%B %e, %Y") )
+      redirect_to files_path
+    end
   end
 
   def edit
@@ -35,8 +40,13 @@ class ArticlesController < ApplicationController
 
   def destroy
     @article = Article.find(params[:id])
-    @article.destroy
-    redirect_to articles_path
+    if @article.articleType != "File"
+      @article.destroy
+      redirect_to articles_path
+    elsif @article.articleType == "File"
+      @article.destroy
+      redirect_to files_path
+    end
   end
 
   private

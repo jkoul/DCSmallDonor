@@ -3,8 +3,13 @@ class AdminController < ApplicationController
 
   def index
     @organizations = Organization.all.order(:name)
-    @articles = Article.all.order(:date).reverse
+    @articles = Article.select{|article| article.articleType != "File"}
+    @files = Article.select{|article| article.articleType == "File"}
     @user = current_user
+  end
+
+  def new
+    @article = Article.new
   end
 
 end

@@ -1,0 +1,14 @@
+<%= form_for ([@article]) do |f| %>
+  <%= f.label :title, "Document Name" %>
+  <%= f.text_field :title %>
+
+  <%= f.label :source, "Document Description" %>
+  <%= f.text_area :source %>
+
+  <%= f.label :url, "File Link" %>
+  <%= f.text_field :url, :placeholder => "Ex: http://organization.com/file-xyz" %>
+
+  <%= f.hidden_field :articleType, :value => "File" %>
+
+  <%= f.submit "Create File"%>
+<% end %>

@@ -10,11 +10,11 @@
   <%= f.text_field :source, :placeholder => "eg Washington Post" %>
 
   <div class="article-type">
-  <h4>Press Hit or Internal Source?</h4>
-  <%= f.radio_button :articleType, "Press" %>
-  <%= f.label :articleType, "Press", :value => "press" %>
-  <%= f.radio_button :articleType, "Coalition" %>
-  <%= f.label :articleType, "Coalition", :value => "coalition" %>
+    <h4>Press Hit or Internal Source?</h4>
+    <%= f.radio_button :articleType, "Press" %>
+    <%= f.label :articleType, "Press", :value => "press" %>
+    <%= f.radio_button :articleType, "Coalition" %>
+    <%= f.label :articleType, "Coalition", :value => "coalition" %>
   </div>
 
   <%= f.label :url, "Article Link" %>
