@@ -5,6 +5,7 @@ Rails.application.routes.draw do
   get '/petition', to: 'home#petition'
   get '/about', to: 'home#about'
   get '/faq', to: 'home#faq'
+  get '/resolution', to: 'home#resolution'
   get '/admin', to: 'admin#index'
 
   resources :organizations

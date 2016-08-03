@@ -22,26 +22,19 @@
 // }
 
 .navbar {
+  padding-top: 15px;
   margin-bottom: 0;
   text-align: center;
-  .navbar-header, .navbar-nav {
-    width: 100%;
+  background: #444;
+  .navbar-header {
     float: none;
-    margin: 0 auto;
-    .navbar-brand, li {
-      float: none;
-      display: inline-block;
+    display: inline-block;
+    position: relative;
 
-      a {
-        color: #ccc;
-        font-size: 16px;
-        &:hover {
-          background: #ccc;
-          color: #222;
-        }
-      }
-    }
     .navbar-brand {
+      width: 50px;
+      height: 50px;
+      padding: 0;
       color: #ccc;
       font-size: 2em;
       font-family: serif;
@@ -50,6 +43,51 @@
       font-weight: 700;
       line-height: normal;
       padding-bottom: 0;
+
+      img {
+        height: 100%;
+        width: 100%;
+      }
+    }
+  }
+
+  .navbar-nav {
+    // width: 100%;
+    float: none;
+    display: inline-block;
+    // margin: 0 auto;
+    li {
+      // float: none;
+      display: inline-block;
+
+      a {
+        color: #eee;
+        font-size: 16px;
+        &:hover {
+          background: #CD3A18;
+        }
+      }
+
+      &.dropdown.open {
+
+        > a {
+          background-color: #eee;
+          color: #660000;
+        }
+        .dropdown-menu {
+          background-color: #eee;
+          li {
+            width: 100%;
+            a {
+              color: #660000;
+
+              &:hover {
+                color: #eee;
+              }
+            }
+          }
+        }
+      }
     }
   }
 }
@@ -294,6 +332,10 @@
 
 }
 
+.footer .nav-signup .fb-page {
+  padding-left: 0;
+}
+
 #petition {
   .well {
     padding: 2em;
@@ -312,8 +354,8 @@
 }
 
 .footer {
-  background: #222;
-  color: #ccc;
+  background: #444;
+  color: #eee;
   text-align: center;
 
   #contacts {
@@ -327,7 +369,8 @@
   }
 }
 
-#about {
+#about, #resolution {
+  margin: 20px;
   margin-bottom: 80px;
 
   h2, h3 {
@@ -350,6 +393,22 @@
 
     p {
       text-align: justify;
+    }
+  }
+}
+
+#resolution {
+  .anc-downloads-list {
+    ul {
+      padding-left: 0;
+      li {
+        list-style: none;
+        text-align: center;
+
+        h4 {
+          margin: 5px 0;
+        }
+      }
     }
   }
 }

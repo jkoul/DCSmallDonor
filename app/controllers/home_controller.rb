@@ -7,4 +7,8 @@ class HomeController < ApplicationController
     @coalition = @articles.select {|article| article.articleType == "Coalition"}
   end
 
+  def resolution
+    @files = Article.select{|article| article.articleType == "File"}
+  end
+
 end

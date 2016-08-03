@@ -1,0 +1,30 @@
+<div class="row" id="resolution">
+  <h2>Pass an ANC Resolution</h2>
+
+  <div class="anc-body-text">
+    <p>Citizens across DC are organizing to make sure their voices are heard in DC government by enacting DC Fair Elections,
+      to make it possible for candidates to run without owing any favors to big donors.
+      Residents are using the following toolkit to reach out to their local Civic Association or ANC Commissioners
+      one-on-one and ask them to pass a resolution calling for the DC Council to act.
+    </p>
+
+    <p>Below are all the documents you need to reach out to your neighborhood-level representatives and ask them to get on board,
+      as well as answer questions that might come up. <a href="mailto:zweinstein@pirg.org?subject=ANC outreach for DC Fair Elections">Email Zach Weinstein</a> for help with tough questions.
+      We recommend that once you’ve gotten the ANC Commissioners or Civic Association leadership to agree to take up the issue a meeting,
+      reach out to us in order to coordinate turnout and to help ensure policy experts are able to testify.
+
+    <p>ANCs 2A, 3E, 3F, 3/4G, 4D, 5D have already passed a resolution,
+      but we still need folks to reach out to the Civic Associations in many of these areas.</p>
+  </div>
+
+  <div class="anc-downloads-list">
+    <h3>Downloads:</h3>
+    <ul>
+      <% @files.each do |file| %>
+        <li class="row">
+          <h4><%= link_to file.title, file.url, :target => "_blank" %></h4>
+        </li>
+      <% end %>
+    </ul>
+  </div>
+</div>
