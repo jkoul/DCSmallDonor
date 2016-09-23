@@ -1,0 +1,12 @@
+#google-form-signup {
+  width: 100%;
+  padding: 0;
+  line-height: 0;
+  iframe {
+    width: 100%;
+  }
+
+  &.page-signup iframe {
+    height: 1000px;
+  }
+}

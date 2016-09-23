@@ -7,6 +7,7 @@ Rails.application.routes.draw do
   get '/faq', to: 'home#faq'
   get '/resolution', to: 'home#resolution'
   get '/admin', to: 'admin#index'
+  get '/signup', to: 'home#googleform'
 
   resources :organizations
   resources :articles
